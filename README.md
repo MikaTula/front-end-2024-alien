@@ -1,2 +1,7 @@
-# front-end-2024-alien
-Домашняя работа 6
+# front-end-2024
+
+Дополнительная информация: 
+
+https://webpack.js.org/concepts/
+
+https://habr.com/ru/articles/701724/

@@ -1,0 +1,82 @@
+@use "sass:map";
+
+$typography-map: (
+        "menu": (
+                "size": 22rem,
+                "line-height": 28rem,
+                "letter-spacing": 0.1rem,
+                "weight": 400
+        ),
+        "hero-title": (
+                "size": 57rem,
+                "line-height": 64rem,
+                "letter-spacing": 0.1rem,
+                "weight": 400
+        ),
+        "hero-subtitle": (
+                "size": 32rem,
+                "line-height": 40px,
+                "letter-spacing": 0.1rem,
+                "weight": 400
+        ),
+        "button": (
+                "size": 45rem,
+                "line-height": 52px,
+                "letter-spacing": 0.1rem,
+                "weight": 400
+        ),
+        "regular-title": (
+                "size": 28rem,
+                "line-height": 36px,
+                "letter-spacing": 0.1rem,
+                "weight": 400
+        ),
+        "regular-text": (
+                "size": 16rem,
+                "line-height": 24px,
+                "letter-spacing": 0.05rem,
+                "weight": 400
+        ),
+);
+
+
+@mixin _private-apply-font($font-style) {
+  $font-map: map.get($typography-map, $font-style);
+
+  font-size: map.get($font-map, "size");
+  font-weight: map.get($font-map, "weight");
+  letter-spacing: map.get($font-map, "tracking");
+  line-height: map.get($font-map, "line-height");
+}
+
+@mixin text-menu {
+  @include _private-apply-font("menu");
+}
+
+@mixin text-hero-title {
+  @include _private-apply-font("hero-title");
+}
+
+@mixin text-hero-subtitle {
+  @include _private-apply-font("hero-subtitle");
+}
+
+@mixin text-hero-subtitle {
+  @include _private-apply-font("hero-subtitle");
+}
+
+@mixin text-button {
+  @include _private-apply-font("button");
+}
+
+@mixin text-regular-title {
+  @include _private-apply-font("regular-title");
+}
+
+@mixin text-regular-text {
+  @include _private-apply-font("regular-text");
+}
+
+
+
+
