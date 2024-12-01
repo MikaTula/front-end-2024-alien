@@ -38,6 +38,7 @@ $color-inverse: var(--md-sys-color-on-primary-fixed-mk);
   --content-colunms: span 6;
   --image-colunms: span 5;
   --gap-colunms: span 1;
+  --gap-visible: inherit;
 
   --gray-columns: -9 / -1;
   --big-text-columns: 1 / -1;
@@ -53,11 +54,12 @@ $color-inverse: var(--md-sys-color-on-primary-fixed-mk);
     --hiro-colunms: 3 / 9;
 
     --content-colunms: span 4;
-    --image-colunms: span 3;
+    --image-colunms: span 4;
     --big-text-columns: 1 / -1;
     --big-logo-columns: 2 / -3;
     --button-position-columns: 2/ -3;
     --padding-block: 50px;
+    --gap-visible: none;
 
   }
   @media (width <= $breakpoint-small) {
@@ -73,7 +75,7 @@ $color-inverse: var(--md-sys-color-on-primary-fixed-mk);
     --inner-colunms: 1 / -1;
     --padding-block: 24px;
     --gap-colunms: span 0;
-
+    --gap-visible: none;
   }
 
   @media (width > $breakpoint-medium) {
@@ -230,6 +232,7 @@ body {
 
     #{$p}__gap {
       grid-column: var(--gap-colunms);
+      display: var(--gap-visible);
     }
 
     #{$p}__inner {
