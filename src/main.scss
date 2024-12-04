@@ -117,6 +117,8 @@ body {
   $p: &;
 
   &--hero {
+    height: 100vh;
+
     #{$p}__menu {
       height: 100px;
       display: grid;
