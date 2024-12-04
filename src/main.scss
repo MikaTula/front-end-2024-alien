@@ -29,7 +29,7 @@ $color-inverse: var(--md-sys-color-on-primary-fixed-mk);
   --inner-colunms: 2 / 14;
 
   --menu-logo-colunms: 1 / 3;
-  --menu-items-colunms: 7 / 12;
+  --menu-items-colunms: 7 / 13;
   --grid-autoflow-column: column;
   --grid-autoflow-row: row;
 
@@ -50,7 +50,7 @@ $color-inverse: var(--md-sys-color-on-primary-fixed-mk);
   @media ($breakpoint-small < width <= $breakpoint-medium) {
     --body-columns: var(--wing) repeat(8, 1fr) var(--wing);
 
-    --menu-items-colunms: 3 / 8;
+    --menu-items-colunms: 3 / 9;
     --hiro-colunms: 3 / 9;
 
     --content-colunms: span 4;
