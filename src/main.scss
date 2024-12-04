@@ -156,17 +156,18 @@ body {
     #{$p}__content {
       display: grid;
       grid-column: var(--hiro-colunms);
-      grid-template-rows: 180px min-content 80px 80px min-content 180px;
+      grid-template-rows: 180px min-content minmax(80px, min-content) minmax(80px, min-content) min-content 180px;
 
       &__title {
         grid-row: 2;
         @include typography.text-hero-title();
-        padding-bottom: $base-gap;
+
       }
 
       &__subtitle {
         grid-row: 3;
         @include typography.text-hero-subtitle();
+        padding-bottom: $base-gap;
       }
 
       &__button {
